@@ -8,7 +8,7 @@ function Header(props) {
     <>
       <header className={styles.header}>
         <h1>Смаколики з Японії</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCard} />
       </header>
       <div className={styles["main-image"]}>
         <img src={sushiImage} alt="Смачні та корисні суші" />
